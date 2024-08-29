@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="dis" *ngIf="!stringToEvaluate">0</div>
+    <div class="dis" *ngIf="stringToEvaluate">{{stringToEvaluate}}</div>
+    <div class="calc-keys">
+        <button type="button" class="oper" (click)="resetInput()">AC</button>
+        <button type="button" class="oper" (click)="clear()">DEL</button>
+        <button type="button" class="oper">X²</button>
+        <button type="button" class="key" (click)="takeOp('/')">/</button>
+        <button type="button" class="numbers" (click)="takeInput(7)">7</button>
+        <button type="button" class="numbers" (click)="takeInput(8)">8</button>
+        <button type="button" class="numbers" (click)="takeInput(9)">9</button>
+        <button type="button" class="key" (click)="takeOp('*')">*</button>
+        <button type="button" class="numbers" (click)="takeInput(4)">4</button>
+        <button type="button" class="numbers" (click)="takeInput(5)">5</button>
+        <button type="button" class="numbers" (click)="takeInput(6)">6</button>
+        <button type="button" class="key" (click)="takeOp('-')">-</button>
+        <button type="button" class="numbers" (click)="takeInput(1)">1</button>
+        <button type="button" class="numbers" (click)="takeInput(2)">2</button>
+        <button type="button" class="numbers" (click)="takeInput(3)">3</button>
+        <button type="button" class="key" (click)="takeOp('+')">+</button>
+        <button type="button" class="numbers" (click)="takeInput(0)">0</button>
+        <button type="button" class="numbers" (click)="takeInput(00)">00</button>
+        <button type="button" class="numbers" (click)="takeSp('.')">.</button>
+        <button type="button" class="eq" (click)="evaluateResult()">=</button>
+    </div>
+</div>

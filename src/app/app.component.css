@@ -1,0 +1,77 @@
+.numbers {
+    background-color: black;
+    color: #ffffff;
+    font-size: 30px;
+    border: none;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
+
+.key {
+    background: lightblue;
+    font-size: 30px;
+    border: none;
+    border-radius: 100%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.oper {
+    background: gray;
+    color: black;
+    font-size: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100%;
+    height: 65px;
+    cursor: pointer;
+    width: 65px;
+}
+
+.calc-text {
+    margin-bottom: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin: auto;
+    background: white;
+    border: 2px solid black;
+    padding: 25px;
+    width: 350px;
+}
+
+.dis {
+    text-align: right;
+    padding: 20px 20px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.eq {
+    background-color: orangered;
+    font-size: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100%;
+    height: 65px;
+    width: 65px;
+}
